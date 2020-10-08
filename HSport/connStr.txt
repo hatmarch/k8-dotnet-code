@@ -1,0 +1,3 @@
+<add name="HPlusSports" connectionString="Data Source=<your_database_server>;Initial Catalog=HPlusSports;Integrated Security=False;User ID=<your_user_name>;Password=<your_password>;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" providerName="System.Data.SqlClient" />
+<add name="HPlusSports_Identity" connectionString="Data Source=<your_database_server>;Initial Catalog=HPlusSports_Identity;Integrated Security=False;User ID=<your_user_name>;Password=<your_password>;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" providerName="System.Data.SqlClient" />
+

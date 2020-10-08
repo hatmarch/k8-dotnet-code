@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAh3kDTMYKSEGzzlREg5qoEQAAAAACAAAAAAAQZgAAAAEAACAAAABUJfyPiYIrypr9r/M94Bvq4H4pZr10FZdyCkGjLU9uVgAAAAAOgAAAAAIAACAAAABEc2u+yPKjJm4eUaZEY43+vHrr0PKyjnj8S013J4Fim4AAAADCMAs5dhrMezdqdxCLJncNBK2W9EohYc6CoAf3tbCmj4azcchNK4IfBcG8AWmgRUP3/8gYIZdW1r1KV2MOwRjHEkrQEb1ySvIkOEO2LdCsMiS9XDO9wu7dmgEzxKXHFt2w3a2/gKI4VNqo+4YgBAZFzt7kkpKo8HT/HqeqrCRSRkAAAAAuNYTNPUBwEhyaoEImp3GqA4ZTn8iY1dQmUi/JxoXizmkFCw3+H3eKbR6KPs7VbszJdbnV8qBlknr44vc8diT3</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <AzureDBConnectionStrings Include="Data Source=hplussports.database.windows.net;Initial Catalog=HPlusSports;Integrated Security=False;User ID=tibi;Password=P@ssw0rd1234;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" />
+    <AzureDBConnectionStrings Include="Data Source=hplussports.database.windows.net;Initial Catalog=HPlusSports_Identity;Integrated Security=False;User ID=tibi;Password=P@ssw0rd1234;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" />
+  </ItemGroup>
+</Project>
