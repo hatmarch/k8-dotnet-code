@@ -9,3 +9,6 @@ bin/
 
 # Packages and Nuget
 packages/
+
+# Local Published Deployment
+WebDeploy/

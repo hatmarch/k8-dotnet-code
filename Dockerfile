@@ -1,7 +1,7 @@
 FROM microsoft/aspnet
 
-RUN powershell - NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
+RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
 
 WORKDIR /inetpub/wwwroot
 
-COPY FolderDeployment/ .
+COPY WebDeploy/ .
