@@ -6,10 +6,19 @@
 
 # Instead we try to pull an image that is from an OS version less than the host node's
 # See also here: https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/version-compatibility?tabs=windows-server-2004%2Cwindows-10-2004
-FROM mcr.microsoft.com/dotnet/framework/aspnet:4.6.2-windowsservercore-10.0.14393.1884
+FROM mcr.microsoft.com/dotnet/framework/aspnet:20181113-4.7.2-windowsservercore-ltsc2019
 
 RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
 
-WORKDIR /inetpub/wwwroot
+
 
 COPY WebDeploy/ .
+
+COPY SvcWrapper.ps1 /
+
+WORKDIR /bin
+RUN powershell -Command cmd /c mklink sh.exe $(cmd /c where powershell)
+
+WORKDIR /inetpub/wwwroot
+
+ENTRYPOINT [ "powershell", "C:\\SvcWrapper.ps1" ]
