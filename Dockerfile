@@ -10,15 +10,13 @@ FROM mcr.microsoft.com/dotnet/framework/aspnet:20181113-4.7.2-windowsservercore-
 
 RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
 
-
-
-COPY WebDeploy/ .
-
 COPY SvcWrapper.ps1 /
 
 WORKDIR /bin
 RUN powershell -Command cmd /c mklink sh.exe $(cmd /c where powershell)
 
 WORKDIR /inetpub/wwwroot
+
+COPY WebDeploy/ .
 
 ENTRYPOINT [ "powershell", "C:\\SvcWrapper.ps1" ]
