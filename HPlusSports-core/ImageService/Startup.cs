@@ -41,7 +41,8 @@ namespace ImageService
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            // For simplicity, don't use https redirect
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 

@@ -26,7 +26,7 @@ namespace ImageService.Controllers
         }
 
         
-        [HttpGet("catagory/{sku}")]
+        [HttpGet("category/{sku}")]
         public async Task<ActionResult<IEnumerable<Image>>> GetImageByCategory(string sku)
         {
             var imageId =
