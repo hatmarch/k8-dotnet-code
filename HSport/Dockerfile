@@ -8,6 +8,9 @@
 # See also here: https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/version-compatibility?tabs=windows-server-2004%2Cwindows-10-2004
 FROM mcr.microsoft.com/dotnet/framework/aspnet:20181113-4.7.2-windowsservercore-ltsc2019
 
+RUN mkdir /LogMonitor
+COPY LogMonitor /LogMonitor/
+
 RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
 
 COPY SvcWrapper.ps1 /
@@ -19,4 +22,6 @@ WORKDIR /inetpub/wwwroot
 
 COPY Publish/ .
 
-ENTRYPOINT [ "powershell", "C:\\SvcWrapper.ps1" ]
+SHELL ["C:\\LogMonitor\\LogMonitor.exe", "powershell.exe"]
+ 
+ENTRYPOINT "C:\\SvcWrapper.ps1" 

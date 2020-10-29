@@ -3,6 +3,7 @@
 
 # Compiled Artefacts
 *.exe
+!LogMonitor.exe
 *.dll
 obj/
 bin/
