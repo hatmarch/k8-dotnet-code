@@ -17,6 +17,6 @@ RUN powershell -Command cmd /c mklink sh.exe $(cmd /c where powershell)
 
 WORKDIR /inetpub/wwwroot
 
-COPY WebDeploy/ .
+COPY Publish/ .
 
 ENTRYPOINT [ "powershell", "C:\\SvcWrapper.ps1" ]
