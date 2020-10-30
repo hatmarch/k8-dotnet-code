@@ -27,6 +27,7 @@
     <add key="elmah.mvc.allowedUsers" value="*"/>
     <add key="elmah.mvc.route" value="elmah"/>
     <add key="elmah.mvc.UserAuthCaseSensitive" value="true"/>
+    <add key ="Site" value="Container Build" /> 
   </appSettings>
   <connectionStrings>
     <add name="HPlusSports" connectionString="Data Source=hplus-db.k8-win-vm.svc.cluster.local;Initial Catalog=HPlusSports;Integrated Security=False; UID=sa; Password=yourStrong(!)Password;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;Connection Timeout=5" providerName="System.Data.SqlClient"/>
