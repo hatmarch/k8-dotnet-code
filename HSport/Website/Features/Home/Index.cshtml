@@ -1,7 +1,7 @@
 ﻿@model IDictionary<HPlusSports.Models.Category, int>
 
 @{
-    ViewBag.Title = "Categories";
+    ViewBag.Title = String.Format("Categories [{0}]", @System.Configuration.ConfigurationManager.AppSettings["Site"]);
 }
 
 <div class="row">
