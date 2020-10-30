@@ -1,5 +1,6 @@
 # VS Files
 .vs/
+*.user
 
 # Compiled Artefacts
 *.exe
