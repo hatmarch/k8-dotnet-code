@@ -29,7 +29,10 @@
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/weatherforecast",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/Images/Category/active-wear-men",
+      "environmentVariables": {
+        "ConnectionStrings__ImageDbContext": "Server=192.168.86.41; Database=HPlusSports; Integrated Security=False; UID=sa; Password=yourStrong(!)Password; MultipleActiveResultSets=true"
+      },
       "publishAllPorts": true,
       "useSSL": true
     }
