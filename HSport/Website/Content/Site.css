@@ -100,8 +100,8 @@ textarea {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: relative;
-    /*right: 0;*/
+    position: absolute;
+    right: 0;
     width: 500px;
     background-color: #f1f1f1;
     min-width: 160px;
