@@ -140,10 +140,11 @@ namespace ImageService.Controllers
         {
             var image = _context.Images.FirstOrDefault(x => x.Id == id);
 
-            if (!string.IsNullOrWhiteSpace(image?.Url))
-            {
-                return RedirectPermanent(image.Url);
-            }
+            // FIXME: Uncomment to show all images
+            // if (!string.IsNullOrWhiteSpace(image?.Url))
+            // {
+            //     return RedirectPermanent(image.Url);
+            // }
 
             if (image?.Content == null)
             {
